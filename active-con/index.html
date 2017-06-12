@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>超能网</title>
+	<link rel="stylesheet"  type="text/css" href="./css" />
+</head>
+<body>
+	<div id="append_parent"></div>
+	<div id="ajaxwaitid"></div>
+	
+	<header>
+		<div class="container">
+			::before
+			<div id="scrolltop">
+				<span hidefocus="true">
+					<a class="scrolltopa" onclick="window.scrollTo('0','0')" title="返回顶部"><b>返回顶部</b></a>
+					
+				</span>
+			</div>
+			
+			<div class="logo">
+				<a href="http://http://www.expreview.com/" target="_blank">
+					<p>超能网，科技生活第一站</p>
+				</a>
+			</div>
+			<!-- logo.end -->
+			
+			<div class="header-banner"></div>
+				<a href="http://http://en.expreview.com/" class="eh_link" terget="_blank">
+				<p>English version</p>
+			</a>
+			
+			<div class="search">
+				<form id="searchForm" action="http://www.baidu.com/baidu" target="_blank" style="padding:0; margin:0; onsubmit="return checkSearch();">
+					
+					<input name="category" type="hidden" value="">
+					<input  name="word" id="word" type="text">
+					<input type="text" placeholder="输入你想要的关键字..." maxlength="12" name="keyword" id="keyword"> 
+					
+					<select name="mode" id="mode">
+						<option value="1">百度</option>
+						<option value="2">本站</option>
+					</select>
+					
+					<input type="submit" id="searchImage" style="display:none">
+					<a  class="icon-search" href="javascript:;" onclick="document.getElementById('searchImage').click();" target="_self"></a>
+
+
+				</form>
+				<script></script>
+			</div>
+			::after
+		</div>
+		<!-- container.end头部 -->
+	</header><!-- 头部 -->
+	
+	<nav>
+		<div class="container">
+			::before
+			<div class="animenu">
+				<input type="checkbox" id="button">
+				<label for="button">网站导航</label>
+				<ul>
+					<li class="webmeun">
+						<a href="">导航网站
+							<i class="icon-angle-down">
+								::before
+							</i>
+						</a>
+						
+						<ul>
+							<li>
+								<h3>栏目</h3>
+
+
+								
+								<a target="_blank" href="http://www.expreview.com/top">必读</a>
+								<a target="_blank" href="http://www.expreview.com/news">新闻</a>
+								<a target="_blank" href="http://www.expreview.com/review">评测</a>
+								<a target="_blank" href="http://www.expreview.com/feature">特辑</a>
+								<a target="_blank" href="http://bbs.expreview.com">论坛</a>
+								<a target="_blank" href="http://www.expreview.com/eweekly">E周刊</a>
+								<a target="_blank" href="http://www.expreview.com/numpk">数字擂台</a>
+								<a target="_blank" href="http://www.expreview.com/guide">淘攻略</a>
+								<a target="_blank" href="http://www.expreview.com/exp_new/exp4_topic.php?action=wendaTopic">超能课堂</a>
+								<a target="_blank" href="http://www.expreview.com/huojiang">荣誉堂</a>
+								
+
+								<div class="cl">
+									::after
+								</div>
+
+							</li>
+							
+							<li id="drive"></li>
+							
+							<li>
+								<h3>产品</h3>
+
+								<a target="_blank" href="http://www.expreview.com/product/power">电源</a>
+								<a target="_blank" href="http://www.expreview.com/product/chassis">机箱</a>
+								<a target="_blank" href="http://www.expreview.com/product/vga">显卡</a>
+								<a target="_blank" href="http://www.expreview.com/product/storage">存储</a>
+								<a target="_blank" href="http://www.expreview.com/product/mb">主板</a>
+								<a target="_blank" href="http://www.expreview.com/product/cpu">CPU</a>
+								<a target="_blank" href="http://www.expreview.com/product/mobile">手机</a>
+								<a target="_blank" href="http://www.expreview.com/product/pad">平板</a>
+								<a target="_blank" href="http://www.expreview.com/product/dress">穿戴</a>
+								<a target="_blank" href="http://www.expreview.com/product/others">其他</a>
+								<a target="_blank" href="http://www.expreview.com/product/VRhardware">VR硬件</a>
+								<a target="_blank" href="http://www.expreview.com/product/VRsoftware">VR应用</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="meunactive">
+						<a href="http://http://www.expreview.com/" target="_blank">首页</a>
+					</li>
+					
+					<li><a target="_blank" href="http://www.expreview.com/top">必读</a></li>
+					
+					<li><a target="_blank" href="http://www.expreview.com/video">视频</a></li>
+						
+					<li><a target="_blank" href="http://www.expreview.com/guide">淘攻略</a></li>
+					
+					<li><a target="_blank" href="http://www.expreview.com/numpk">数字擂台</a></li>
+					
+					<li><a target="_blank" href="http://www.expreview.com/news">新闻</a></li>
+					
+					<li><a target="_blank" href="http://www.expreview.com/review">评测</a></li>
+					
+					<li><a target="_blank" href="http://www.expreview.com/feature">特辑</a></li>
+
+					<li><a target="_blank" href="http://bbs.expreview.com">论坛</a> </li>
+					::after
+				</ul>
+				
+			</div>
+		</div>
+		
+	</nav>内容
+
+
+	<!--  框架结构在这里 -->
+	
+
+
+	<div class="left-box advert"></div>
+	<div class="right-box advert"></div>
+	<div class="main"></div>
+	<footer></footer><!-- 底部 -->
+	<div id="discuz_tips"></div>
+
+		
+</body>
+</html>
