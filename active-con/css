@@ -200,4 +200,13 @@ icon-search:before {
     content: "\f002";
 }
 
+/* 上面有的出里问题 */
 
+
+
+
+nav{
+	margin:0;
+	padding:0;
+	
+}
