@@ -196,9 +196,8 @@ option{
 
 
 
-form .fa fa-search{
-	text-decoration: none;
-
+icon-search:before {
+    content: "\f002";
 }
 
 /* 上面有的出里问题 */
@@ -268,13 +267,10 @@ nav{
 	position: relative;
 
 }
-ul li {
-	list-style:none;
-
+ul li{
+	list-style: none;
 }
- .animenu li{
- 	position: relative;
- }
+
 
 .animenu >ul >li>a{
 	float:left;
@@ -288,82 +284,4 @@ ul li {
 	color:#999999;
 	text-transform: none;
 	text-shadow:none;
-}
-.animenu ul{
-	padding:0;
-	list-style: none;
-}
-
-
-.animenu >ul  ul{
-	position: absolute;
-	top:100px;
-	left:0;
-	z-index:1000;
-	opacity: 0;
-	visibility:hidden;
-	margin:0;
-	width:350px;
-	box-shadow:0px 1px 5px #ccc;
-	border-bottom:2px solid #cc102c;
-	background-color: #fefefe;
-	background-image: none;
-	transition-property: margin, opacity;
-	transition-duration: .15s;
-
-
-
-}
-
-
-
-.animenu >ul  ul li{
-	display:block;
-	margin:0;
-	padding:0  20px 20px 20px;
-}
-
-
-.animenu li{
-	position: relative;
-}
-
-h3{
-	    font-family: 'Microsoft Yahei';
-	    font-weight:500;
-	    line-height: 1.1;
-	    color:inherit;
-	    margin-top:10px;
-	    margin-bottom:10px;
-	    font-size:1.17em;
-	    left: 5px；
-
-}
-
-.animenu > ul ul a{    
-   font-size:14px;
-   padding:2px 10px;
-   display:block;
-   border-color:#373737;
-   float:left;
-  }
-
-
-.animenu > ul ul li:last-child{
-	box-shadow: none;
-
-}
-
-.animenu > ul > li{
-	float:left;
-	padding-right:2px;
-	background: url(./cng_img/meunbg1.png) no-repeat right;
-}
-
-.animenu > ul > li.meunactive > a{
-	border-top:1px solid #f30;
-	padding:8px 20px 7px 20px !important;
-	font-size:20px;	
-	text-decoration:none;
-	
 }
