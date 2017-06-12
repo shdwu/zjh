@@ -176,3 +176,28 @@ header .container{
 	padding:0 !important;
 
 }
+
+
+option{
+	font-weight:normal;
+	display:block;
+	white-space: pre;
+	min-height:1.2em;
+	padding:0 2px 1px 0;
+}
+
+.search > form>a{
+	position: absolute;
+	font-size:14px;
+	line-height: 22px;
+	top:3px;
+	right:10px;
+}
+
+
+
+icon-search:before {
+    content: "\f002";
+}
+
+
