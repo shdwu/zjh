@@ -367,3 +367,29 @@ h3{
 	text-decoration:none;
 	
 }
+
+
+/* main */
+
+
+
+.main{
+	position: relative;
+	background:#162c42;
+	height: 100%;
+	
+}
+
+.main-top-bg{
+	background:url(./cng_img/main-top-bg.png) repeat-x;
+	height:22px;
+	position: absolute;
+	top:0;
+	right: 0;
+	left:0;
+    z-index: 200;
+
+}
+
+
+
