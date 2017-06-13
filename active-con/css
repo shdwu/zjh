@@ -377,7 +377,7 @@ h3{
 	position: relative;
 	background:#162c42;
 	height: 100%;
-	
+
 }
 
 .main-top-bg{
@@ -390,6 +390,148 @@ h3{
     z-index: 200;
 
 }
+ 
+
+  .main.container{
+  	position: relative;
+  	background: #fff url(./cng_img/mainBG.jpg) left repeat-y;
+
+ }
+
+ .container{
+ 	margin-left:auto;
+ 	margin-right:auto;
+ 	padding:0;
+ 	width:1250px;
+
+ }
+
+.main.container.pin-wrapper{
+	float:left;
+	width:140px;
+
+}
+
+
+.main-menu{
+	padding:20px 0px;
+	float:left;
+	
+	height:auto;
+
+}
+
+  .main-menu-name{
+ 	
+ 	text-align: center;
+ 	border-bottom: 5px solid #f1f1f1;
+ 	padding:0px 20px 20px 20px ;
+ }
+
+.main-menu-name >button{
+	margin-bottom:10px;
+
+}
+
+input.button ,button.button{
+	height:34px;
+	cursor:pointer;
+}
+
+.main-menu-nav{
+	text-align: center;
+	padding:0px 20px 20px 20px ;
+	width:139px;
+	height:338px;
+
+}
+
+
+.main-menu-nav > p{
+	padding:20px 5px 0px 5px;
+	text-align: center;
+	margin:0 0 10px;
+	width:99px;
+	height:40px;
+
+
+}
+
+.fa fa-hdd{
+	 
+	 font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased; 
+}
 
 
 
+.main-menu-nav >a{
+	padding:5px 5px;
+	text-align: center;
+	line-height: 28px;
+	color:#000;
+	text-decoration:none;
+
+}
+.main-content{
+	width:790px;
+	float:left;
+	padding:20px 0px;
+	position: relative;
+}
+
+.main-content-bannerpic{
+	width:45.9%;
+	min-height:320px;
+	margin:10px 2% 10px 2%;
+	float:left;
+}
+
+
+
+.slide-wp{
+	width:100%;
+	height: 320px;
+	position: relative;
+
+}
+.slides{
+	height:320px;
+
+}
+
+a{
+	color:#000;
+	text-decoration:none;
+}
+.slideImg{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 9;
+}
+
+.slideChild {
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10;
+    height: 420px;
+    position: relative;
+    }
+
+    .slideChild >h5{
+    	margin-top:230px;
+    	z-index: 99;
+
+    }
+
+    .slideChild >h5>a{
+    	margin:0;
+    	padding:0;
+    	line-height: 24px;
+    	font-size:16px;
+    	color:#0D75AD;
+    }
