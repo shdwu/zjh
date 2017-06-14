@@ -41,8 +41,7 @@ header .container{
 }
 
 #scrolltop{
-	right: 30px;
-	 background: none repeat scroll 0 0 #F4F4F4;
+	background: none repeat scroll 0 0 #F4F4F4;
     border-color: -moz-use-text-color #CDCDCD ;
     border-image: none;
     border-radius: 3px;
@@ -92,7 +91,7 @@ header .container{
 	margin-top:30px;
 	width:240px;
 	height:70px;
-	background:url(./cng_img/ExpLOGO.png) no-repeat top left;
+	background:url(../imgs/ExpLOGO.png) no-repeat top left;
 	color:#333;
 	line-height:14px;
 	text-decoration: none;
