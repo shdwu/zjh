@@ -394,7 +394,7 @@ h3{
 
   .main.container{
   	position: relative;
-  	background: #fff url(./cng_img/mainBG.jpg) left repeat-y;
+  	background: #fff url(./cng_img/mainBG 1.1.jpg) left repeat-y;
 
  }
 
@@ -514,6 +514,8 @@ a{
 	z-index: 9;
 }
 
+
+
 .slideChild {
     width: 100%;
     margin: 0 auto;
@@ -535,3 +537,12 @@ a{
     	font-size:16px;
     	color:#0D75AD;
     }
+
+
+.slideChild h4{
+	margin:0;
+	padding:0;
+	line-height: 20px;
+	font-size:20px;
+	z-index: 99;
+}
