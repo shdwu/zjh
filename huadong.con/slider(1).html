@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>滑块</title>
+	<link rel="stylesheet" href="./jquery.ui.css"/>
+
+	<style type="text/css">
+		#slider{
+			width:500px;
+			height:20px;
+			margin:20px 55px 0px  ;
+			left:20px;
+			
+			background: lightblue;
+			border-radius: 30px;
+		}
+		#slider .ui-slider-handle{
+			width:25px;
+			height:25px;
+			background:#fff;
+			border-radius: 60px;
+			text-align: center;
+			line-height: 25px;
+
+
+		}
+		#slider .ui-slider-handle:BEFORE{
+			border-color:pink;
+
+		}
+
+
+		ul{
+			margin:0;
+			
+		}
+
+		ul li{
+			
+			list-style-type: none;
+			float:left;
+			margin-right: 60px;
+			display:inline-block;
+			font-size:14px;
+			color:lightblue;
+
+
+
+		}
+
+		.Li{
+			margin-left: 35px;
+		}
+
+
+	</style>
+	<script src="./jquery.js"></script>
+	<script src="./jquery.ui.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var handle=document.getElementById('custom-handle');
+			var Li1=document.getElementsByName('li');
+			$('#slider').slider({
+
+				orientation:"horizontal",
+				range:"min",
+				animate:"true",
+
+
+			});
+		
+
+		
+
+		});
+	</script>
+
+</head>
+<body>
+<!-- <label for="amount">滑动：</label> -->
+  <!-- <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;"> -->
+<div id="slider">
+	<div id="custom-handle" class="ui-slider-handle"></div>
+</div>
+<ul id="eq">
+	<li class="Li">1万</li>
+	<li>20万</li>
+	<li>40万</li>
+	<li>60万</li>
+	<li>80万</li>
+	<li>100万</li>
+	
+</ul>
+
+	
+</body>
+</html>
