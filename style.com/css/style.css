@@ -1,0 +1,57 @@
+body{
+	padding:0;
+	margin:0;
+}
+
+#bigbox{
+	min-width: 990px;
+	width:auto;
+	background-color:transparent;
+}
+#nav{
+	height: 32px;
+
+}
+
+
+#zj-con{
+	position: relative;
+
+	background:#f0e2a9;
+	border-bottom:1px solid #eee;
+}
+
+#login-info{
+	height: 32px;
+	line-height: 32px;
+	color:#817f77;
+
+}
+
+#login-info em{
+	margin-left:50px;
+	font-style:normal;
+
+
+}
+.list-one{
+	position: absolute;
+	top:0;
+	right: 0;
+
+}
+
+#login-info a{
+	margin-left:30px;
+	list-style: none;
+	text-decoration: none;
+	font-color:#817f77;
+}
+
+.list-one li{
+	float:right;
+	z-index: 1000;
+	margin-right: 20px;
+	list-style:none;
+	top:0;
+}
