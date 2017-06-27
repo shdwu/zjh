@@ -1,0 +1,39 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+.container{
+	max-width: 730px;
+	padding-right: 15px;
+	padding-left:15px;
+	margin-left:auto;
+	margin-right: auto;
+}
+.header{
+	padding-bottom:30px;
+	border-bottom:1px solid #e5e5e5;
+}
+
+
+.jumbotron {
+	margin-top:50px;
+
+}
+.jumbotron .btn{
+	padding:14px 24px;
+	font-size:21px;
+}
+
+
+.jumbotron img{
+	right:10px;
+}
+
+
+.footer p{
+	padding-top:19px;
+	color:#777;
+	border-bottom:1px solid #e5e5e5;
+
+}
