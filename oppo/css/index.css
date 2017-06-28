@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+	overflow: hidden;
+	font-family: sans-serif;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background: #fff;
+    color: #393939;
+    font-family: "Myriad Pro", Arial, "FZLanTingHei-R-GBK", 方正兰亭黑, "Microsoft YaHei", 微软雅黑, STHeiti, 华文黑体, SimSun, 宋体, sans-serif;
+    font-size: 100%;
+    line-height: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+.main-header {
+	position: relative;
+	z-index: 100;
+}
+
+.main-header .upper-area {
+	background: #009B72;
+	color: #fff;
+	min-height: 10px;
+	font-size: 0.8215rem; 
+}
+
+.main-header .upper-area .wrapper {
+	display: block;
+	text-align: right;
+}
+
+.g {
+	letter-spacing: -0.35em;
+}
+
+.g > * {
+	letter-spacing: normal;
+}
+
+.wrapper {
+	padding: 0 0.75rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.gi {
+	display: inline-block;
+	vertical-align: top;
+	letter-spacing: normal;
+}
+
+ul, ol, dl, dd {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main-header .upper-area li + li {
+	border-left: 1px solid #47b488;
+}
+
+.main-header .upper-area li {
+	border-left: 1px solid #47b488;
+}
+
+.main-header .upper-area a {
+	display: block;
+	padding: 6px 20px 5px;
+	min-height: 28px;
+	color: #fff;
+}
+
+a {
+	cursor: pointer;
+	color: inherit;
+	text-decoration: none;
+	background: transparent;
+}
+
+.main-header .upper-area a:hover {
+	background: #47b488;
+}
+
+.main-header .bottom-area {
+	background: #fff;
+}
+
+.main-header .boottom-area .wrapper {
+	overflow: visible;
+}
+
+.wrapper {
+	padding: 0 0.75rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.main-header .logo {
+	margin: 34px 0 20px;
+	padding: 0;
+	text-align: left;
+	float: left;
+}
+
+.logo-extend {
+	width: 400px !important;
+	position: relative;
+}
