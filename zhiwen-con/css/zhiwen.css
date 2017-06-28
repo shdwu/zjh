@@ -1,4 +1,4 @@
-*{,
+*{
 	padding:0;
 	margin:0;
 }
@@ -9,7 +9,7 @@ body{
 
 html,body{
 	height:100%;
-	/* overflow: hidden; */
+ /*  overflow: hidden; */
 }
 
 #container, .sections,.section{
@@ -20,7 +20,7 @@ html,body{
 #section0,
 #section1,
 #section2,
-#section3,{
+#section3{
 	background: #000;
 	background-size:cover;
 	background-position: 50% 50%;
@@ -45,7 +45,7 @@ html,body{
 }
 
 #section3{
-	background-image:url(../images/4.jpg);
+	background-image:url(../images/2 .jpg);
 	color:#008283;
 	text-shadow:1px 1px 1px #fff;
 }
