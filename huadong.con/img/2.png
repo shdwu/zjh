@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://m.expreview.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title> 超能网</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="pragram" content="no-cache">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="http://m.expreview.com/favicon.png">
+<link rel="shortcut icon" href="http://m.expreview.com/favicon.png">
+<link href="./2_files/style_1_common_mobile.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./2_files/style.css" media="screen">
+<link rel="stylesheet" type="text/css" href="./2_files/font-awesome.min.css" media="screen">
+<script src="./2_files/jquery-1.8.3.min.js.下载" type="text/javascript"></script>
+<script src="./2_files/jquery.event.drag-1.5.min.js.下载" type="text/javascript"></script>
+<script src="./2_files/jquery.touchSlider.js.下载" type="text/javascript"></script>
+<script src="./2_files/mobile.js.下载" type="text/javascript"></script>
+<script src="./2_files/coke.js.下载" type="text/javascript"></script>
+<script src="./2_files/common.js.下载" type="text/javascript"></script>
+<script src="./2_files/common.js(1).下载" type="text/javascript"></script>
+<script src="./2_files/common.js(2).下载" type="text/javascript"></script>
+  <script src="./2_files/echarts.min.js.下载" type="text/javascript"></script>
+<script type="text/javascript">var STYLEID = '1', siteUrl = 'http://www.expreview.com',STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'x9x', charset = 'utf-8', discuz_uid = '0', cookiepre = 'discuz_fbd1_', cookiedomain = '.expreview.com', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = '', creditnotice = '1|威望|,2|超能劵|,4|超能币|', defaultstyle = '', REPORTURL = 'aHR0cDovL20uZXhwcmV2aWV3LmNvbS8=', SITEURL = 'http://www.expreview.com', JSPATH = '/static/js/';</script>
+</head>
+
+<body cz-shortcut-listen="true">
+<div id="append_parent" style="z-index:10000;position:fixed"></div>
+<div id="ajaxwaitid"></div>﻿<div class="topic">
+  <input type="checkbox" id="sideToggle">
+  <aside>
+    <ul>
+      <div class="logo"><a href="http://m.expreview.com/" target="_self"><img src="./2_files/logo.png" width="150"></a></div>
+      <li class="u" style="color: #fff;font-size:20px">
+            	<img src="./2_files/ceneo4LyDg8c.jpg"><a href="http://m.expreview.com/member.php?mod=logging&amp;action=login&amp;s=m" target="_self">登录</a><span>/</span><a href="http://m.expreview.com/member.php?mod=reg&amp;s=m" target="_self">注册</a>
+      <!-- 	      onclick="showWindow('login', '/member.php?mod=logging&action=login');return false;"  -->
+      </li>
+      <a href="http://m.expreview.com/"><li>&nbsp; <i class="fa fa-home"></i><p>首页</p></li></a>
+      <a href="http://m.expreview.com/news"><li> <i class="fa fa-newspaper-o"></i><p>新闻</p></li></a>
+       <a href="http://m.expreview.com/review"> <li> <i class="fa fa-bar-chart-o"></i><p>评测</p></li></a>
+    <a href="http://m.expreview.com/guide">  <li> <i class="fa fa-shopping-cart"></i><p>淘攻略</p></li></a>
+    <a href="http://m.expreview.com/activity">  <li> <i class="fa fa-rocket"></i><p>活动</p></li></a>
+    </ul>
+    <ul class="switch">
+    <li onclick="controllerPHCAS(&#39;product&#39;)">数码资讯<div style="position: absolute;top: 420px;left: 130px;"><input type="checkbox" id="control1" class="control" checked="">
+  	<label for="control" class="checkbox"></label></div></li>
+  
+    <li onclick="controllerPHCAS(&#39;product&#39;)">电脑资讯<div style="position: absolute;top: 453px;left: 130px;"><input type="checkbox" id="control2" class="control" checked="">
+  	<label for="control" class="checkbox"></label></div></li>
+  	 
+  	</ul>
+    
+    
+  </aside>
+  <div id="left_nav" class="">
+    <label id="sideMenuControl" for="sideToggle">
+    <div id="nav_main"></div>
+    <div onclick="show1()" id="thisDiv"><i class="crm_menu fa fa-bars"></i></div>
+    <div onclick="show2()" id="anotherDiv" style="display:none;">
+      <div class="nav_main"> </div><i class="fa fa-close"></i>
+    </div>
+    </label>
+  </div>
+  <div class="logo">
+  <p></p>
+  </div>
+  <div class="Search_hide Search_icon"><a onclick="Search(this)"><i class="fa fa-search"></i></a><br>
+    <a class="s_main" href="http://m.expreview.com/#"><span class="Search">
+<form action="http://m.expreview.com/exp_new/exp4_search.php?action=searchMobile" method="post" target="_blank">
+ <input name="category" type="hidden" value="product">
+ <input name="word" id="word" type="hidden" value="">
+     <input id="search" type="text" name="keyword" value="" style="width:150px; height:30px;float:left;font-size:13px; color:#666;font-size:20px;">
+     <input type="submit" value=" " style=" background:url(/exp_new/static/mobile/img/Search.png) no-repeat;float:left; width:20px; height:20px; margin-left:13px; margin-top:5px; border:none;">
+   </form>
+  	</span></a></div>
+  <div class="user">
+  <img src="./2_files/ceneo4LyDg8c.jpg">
+    </div>
+</div>
+<script type="text/javascript">   
+jQuery("document").ready(function(){   
+//jQuery("#control1").click(function(){controllerPHCAS('product')}); 
+//jQuery("#control2").click(function(){controllerPHCAS('product')}); 
+})   
+</script> <script type="text/javascript">
+jQuery(document).ready(function(){
+var dragBln = false;
+
+jQuery(".main_image").touchSlider({
+flexible : true,
+speed : 100,
+paging : $(".flicking_con a"),
+counter : function (e){
+jQuery(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+}
+});
+
+jQuery(".main_image").bind("mousedown", function() {
+dragBln = false;
+});
+
+jQuery(".main_image").bind("dragstart", function() {
+dragBln = true;
+});
+
+jQuery(".main_image a").click(function(){
+if(dragBln) {
+return false;
+}
+});	
+
+ var searchIndexMobile=document.getElementById("search");
+ searchIndexMobile.onfocus=function(){if(this.value==this.defaultValue)this.value=''};
+ searchIndexMobile.onblur=function (){if(/^\s*$/.test(this.value)){this.value=this.defaultValue;this.style.color='#aaa'}}
+});
+</script>
+<div class="main_visual" id="top">
+   
+
+        <div class="image_bg"></div>
+  <div class="flicking_con"> 
+      	<a href="http://m.expreview.com/" class="on">1</a>
+    	  	<a href="http://m.expreview.com/">2</a>
+    	  	<a href="http://m.expreview.com/">3</a>
+    	  	<a href="http://m.expreview.com/">4</a>
+    	  	<a href="http://m.expreview.com/">5</a>
+    	  	<a href="http://m.expreview.com/">6</a>
+    	  </div>
+  <div class="main_image">
+    <ul style="width: 1423px; overflow: visible;">
+        
+         
+  <li style="float: none; display: block; position: absolute; top: 0px; left: 0px; width: 1423px;"><span style="background-image:url(http://img.expreview.com/news/2017/06/06/imac_pro_01.jpg); background-size:cover; background-position:50% 50%"><a href="http://m.expreview.com/54714.html">
+                  <div class="main_image_user">
+        <div class="text_area">
+        <h1>iMac Pro发布：18核Intel Xeon、AMD Vega显卡，卖4999刀起</h1>
+        </div>
+        <div class="user_bottom"> 
+        <div class="un">
+        <img src="./2_files/avatar.php">          	<p>alexallen</p>
+          	<span>&nbsp;|&nbsp;&nbsp;1天之前</span>
+                </div>
+                </div>
+        </div>
+                  </a>
+                          
+                  </span></li>
+     
+  <li style="float: none; display: block; position: absolute; top: 0px; left: 1423px; width: 1423px;"><span style="background-image:url(http://img.expreview.com/news/2017/05/31/compx_17_hi_02.jpg); background-size:cover; background-position:50% 50%"><a href="http://m.expreview.com/54513.html">
+                  <div class="main_image_user">
+        <div class="text_area">
+        <h1>Computex 2017：华硕带来一大波X299主板，ROG、TUF、PRIM皆有</h1>
+        </div>
+        <div class="user_bottom"> 
+        <div class="un">
+        <img src="./2_files/avatar.php">          	<p>alexallen</p>
+          	<span>&nbsp;|&nbsp;&nbsp;8天之前</span>
+                </div>
+                </div>
+        </div>
+                  </a>
+                          
+                  </span></li>
+     
+  <li style="float: none; display: block; position: absolute; top: 0px; left: 2846px; width: 1423px;"><span style="background-image:url(http://img.expreview.com/news/2017/05/22/rx560_rv_hi.jpg); background-size:cover; background-position:50% 50%"><a href="http://m.expreview.com/54216.html">
+                  <div class="main_image_user">
+        <div class="text_area">
+        <h1>AMD Radeon RX 560显卡同步评测：青出于蓝而胜于蓝</h1>
+        </div>
+        <div class="user_bottom"> 
+        <div class="un">
+        <img src="./2_files/avatar(1).php">          	<p>梁俊豪</p>
+          	<span>&nbsp;|&nbsp;&nbsp;05-22</span>
+                </div>
+                </div>
+        </div>
+                  </a>
+                          
+                  </span></li>
+     
+  <li style="float: none; display: block; position: absolute; top: 0px; left: 4269px; width: 1423px;"><span style="background-image:url(http://img.expreview.com/news/2017/05/18/gg_io_hi.jpg); background-size:cover; background-position:50% 50%"><a href="http://m.expreview.com/54236.html">
+                  <div class="main_image_user">
+        <div class="text_area">
+        <h1>I/O 2017大会亮点汇总：看过就知道Google发布了什么牛X的东西</h1>
+        </div>
+        <div class="user_bottom"> 
+        <div class="un">
+        <img src="./2_files/avatar.php">          	<p>alexallen</p>
+          	<span>&nbsp;|&nbsp;&nbsp;05-18</span>
+                </div>
+                </div>
+        </div>
+                  </a>
+                          
+                  </span></li>
+     
+  <li style="float: none; display: block; position: absolute; top: 0px; left: 5692px; width: 1423px;"><span style="background-image:url(http://img.expreview.com/news/2017/05/16/sm_36_hi.jpg); background-size:cover; background-position:50% 50%"><a href="http://m.expreview.com/54104.html">
+                  <div class="main_image_user">
+        <div class="text_area">
+        <h1>坚果Pro的软实力又如何？Smartisan OS 3.6新功能使用体验</h1>
+        </div>
+        <div class="user_bottom"> 
+        <div class="un">
+        <img src="./2_files/avatar.php">          	<p>alexallen</p>
+          	<span>&nbsp;|&nbsp;&nbsp;05-15</span>
+                </div>
+                </div>
+        </div>
+                  </a>
+                          
+                  </span></li>
+     
+  <li style="float: none; display: block; position: absolute; top: 0px; left: 7115px; width: 1423px;"><span style="background-image:url(http://img.expreview.com/news/2017/05/10/jgpro_unb_hi.jpg); background-size:cover; background-position:50% 50%"><a href="http://m.expreview.com/54047.html">
+                  <div class="main_image_user">
+        <div class="text_area">
+        <h1>老罗在春天摘下的新鲜情怀，坚果Pro细红线特别版开箱</h1>
+        </div>
+        <div class="user_bottom"> 
+        <div class="un">
+        <img src="./2_files/avatar.php">          	<p>alexallen</p>
+          	<span>&nbsp;|&nbsp;&nbsp;05-10</span>
+                </div>
+                </div>
+        </div>
+                  </a>
+                          
+                  </span></li>
+    </ul>
+  </div>
+</div>
+
+<div class="index_main">
+  <ul id="index_main_ul">
+          <li>
+    	<a href="http://m.expreview.com/54784.html"> <img src="./2_files/ios_11_tit.jpg">     		<h1>iOS 11开发者测试版快速体验：好用到不想刷回iOS 10</h1>
+      	</a>
+      	<p>WWDC 2017发布会后，苹果放出了iOS 11开发者测试版，这里我们也升级到这个系统并进行快速上手体验，先预览一下迄今最强iOS的表现又如何。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar.php">          	<p>alexallen</p>
+          	<span>| 2小时之前</span>
+          	<i class="fa fa-comments">1</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54783.html"> <img src="./2_files/huawei.jpg">     		<h1>华为MateBook新品国行售价揭晓：4988起带Office正版</h1>
+      	</a>
+      	<p>​华为在微博宣布了MateBook X，MateBook E和MateBook D的售价，售价最低4988，同时发布了针对MateBook的一系列配件，包括MateDock2，蓝牙鼠标，内胆包，背包和二合一键盘。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(2).php">          	<p>Origin</p>
+          	<span>| 2小时之前</span>
+          	<i class="fa fa-comments">9</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54782.html"> <img src="./2_files/JD1.jpg">     		<h1>分析师跑了GTX 1070/RX 580挖矿性能，称NVIDIA靠能效领先</h1>
+      	</a>
+      	<p>加拿大皇家银行分析师日前以GTX 1070和RX 580两个显卡为例跑了挖矿性能，当然他的目的不是测试谁的挖矿性能好，而借此得出了一个结论——随着计算规模的增长，NVIDIA在能效上更有优势，这也是他们获得领先的原因。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(3).php">          	<p>bolvar</p>
+          	<span>| 3小时之前</span>
+          	<i class="fa fa-comments">20</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54780.html"> <img src="./2_files/DSC_1492.jpg">     		<h1>ComputeX 2017：MIJ电源打前锋，酷冷至尊电源与散热器新品快览</h1>
+      	</a>
+      	<p>​在今年的ComputeX 2017台北电脑展上，酷冷至尊不仅展示了自己最新的Cosmos C700P旗舰级机箱，其在电源产品和散热器产品上也有新品推出，现在我们一起组团去看一下。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(4).php">          	<p>潘靖江</p>
+          	<span>| 5小时之前</span>
+          	<i class="fa fa-comments">4</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54779.html"> <img src="./2_files/corei9-03.jpg">     		<h1>18核Core i9处理器TDP或达200W，LGA2066插槽也有不同</h1>
+      	</a>
+      	<p>Intel部分Core i9处理器推后很大原因是Intel还没准备好，核心越多，处理器也越复杂，而消费级CPU还要更高的频率。因此有消息称14-18核处理器TDP功耗可能高达200W，而且他们需要不同的LGA2066插槽。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(3).php">          	<p>bolvar</p>
+          	<span>| 5小时之前</span>
+          	<i class="fa fa-comments">19</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54774.html"> <img src="./2_files/19.jpg">     		<h1>ComputeX 2017：双系统的大箱子，海盗船概念型机箱展示</h1>
+      	</a>
+      	<p>在今年的ComputeX 2017台北电脑展上，海盗船给大家带来了什么新产品呢？我们一起来看看。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(4).php">          	<p>潘靖江</p>
+          	<span>| 6小时之前</span>
+          	<i class="fa fa-comments">6</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54773.html"> <img src="./2_files/qq.jpg">     		<h1>期待中的腾讯大战苹果6月12日就要来了？腾讯：假的</h1>
+      	</a>
+      	<p>网上很多讨论苹果与微信大战甚至彻底分裂的文章，但是当事双方从来没这么表态过。这两天苹果又封杀了APP热更新，又有分析称微信最快在6月12日就要被苹果下架，不过这事被腾讯公关部门否认。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(3).php">          	<p>bolvar</p>
+          	<span>| 6小时之前</span>
+          	<i class="fa fa-comments">16</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54772.html"> <img src="./2_files/mi_618.jpg">     		<h1>小米618优惠活动：小米Note 2立减300元，无限流量卡开卖</h1>
+      	</a>
+      	<p>小米在近日开始了今年的618优惠活动，包括手机、电视、笔记本电脑等都有下单立减的优惠，近期有想入手新手机、新电视的不妨留意下了。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar.php">          	<p>alexallen</p>
+          	<span>| 6小时之前</span>
+          	<i class="fa fa-comments">7</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54735.html"> <img src="./2_files/SAMA_1.jpg">     		<h1>先马阴阳师机箱评测：二次元与电竞结晶</h1>
+      	</a>
+      	<p>先马阴阳师机箱借鉴了《双星之阴阳师》，棱角分明的漆面造型合符二次元电竞玩家的胃口，采用紧凑型ATX结构，硬件分仓式让整体内部空间得以充分利用，最大支持240水冷散热器，目前售价209元划分黑色和白色两个版本。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(5).php">          	<p>头号硬核玩家</p>
+          	<span>| 6小时之前</span>
+          	<i class="fa fa-comments">13</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54770.html"> <img src="./2_files/5G-network-speed.jpg">     		<h1>工信部下发IMT-2020频段使用通知，确认中国5G网络开荒频段</h1>
+      	</a>
+      	<p>前日工信部在官网发布了《工业和信息化部关于第五代国际移动通信系统（IMT-2020）使用3300-3600MHz和4800-5000MHz频段相关事宜的通知》，这份通知就基本确定了中国首批未来IMT-2020（5G法定名字）网络的使用频段，第一批将会使用3.3-3.6GHz以及4.8-5.0GHz两个5G黄金频段。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(1).php">          	<p>梁俊豪</p>
+          	<span>| 7小时之前</span>
+          	<i class="fa fa-comments">4</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54769.html"> <img src="./2_files/core.jpg">     		<h1>Intel完美蹭了高考热点：不知道怎么选就选C吧</h1>
+      	</a>
+      	<p>2017年的高考今天开始了，如何蹭好这个热点搞好营销考验着各大公司、企业的市场部门，到目前为此看到蹭热点最好的科技公司是Intel——不知道怎么选就选Core，完美利用了那个选择题如何选的梗。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(3).php">          	<p>bolvar</p>
+          	<span>| 7小时之前</span>
+          	<i class="fa fa-comments">16</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54768.html"> <img src="./2_files/Ryzen_1700_01.jpg">     		<h1>Intel架构师为何跳槽AMD？竟跟Ryzen处理器有关</h1>
+      	</a>
+      	<p>现在负责AMD计算及图形业务的总经理、高级副总裁Jim Anderson先后在Intel、LSI等公司任职，2015年加盟AMD，他坦言从Intel跳槽到AMD公司的一个重要原因就是Ryzen处理器，他们研发了能跟Intel抗衡的高性能处理器。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(3).php">          	<p>bolvar</p>
+          	<span>| 8小时之前</span>
+          	<i class="fa fa-comments">35</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54759.html"> <img src="./2_files/imac_vr_02.jpg">     		<h1>虽然苹果为HTC Vive大打广告，但想用Mac玩VR还是有点难</h1>
+      	</a>
+      	<p>在这次WWDC 2017大会上，苹果终于了公布新系统、新设备对VR的支持，HTC的VR设备Vive多次亮相在广告、DEMO中那么想用Mac电脑玩VR难不难？</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar.php">          	<p>alexallen</p>
+          	<span>| 9小时之前</span>
+          	<i class="fa fa-comments">7</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54767.html"> <img src="./2_files/ok.jpg">     		<h1>知名花粉“建华wei业”抹黑小米被判侵权，赔偿24万元</h1>
+      	</a>
+      	<p>小米公司去年宣布起诉知名花粉建华wei业长期抹黑、造谣小米，现在这个案件有了判决了，建华wei业被判侵犯了小米公司名誉权，需要赔偿小米公司24万元。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(3).php">          	<p>bolvar</p>
+          	<span>| 9小时之前</span>
+          	<i class="fa fa-comments">29</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54766.html"> <img src="./2_files/Apple11.jpg">     		<h1>能升级iOS 11不代表能完整支持新特性，隐藏新功能小汇总</h1>
+      	</a>
+      	<p>你的设备能升级iOS 11别太高兴，，苹果还是有区别对待的，旧款设备也将会少了很多iOS 11的新功能。另外随着iOS 11 Beta版释放，很多网友都心甘情愿地为苹果做白老鼠，为9月份正式发布的iOS 11除虫（debug），试用过程中也发现了很多苹果未有描述过的新功能。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(1).php">          	<p>梁俊豪</p>
+          	<span>| 10小时之前</span>
+          	<i class="fa fa-comments">2</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54765.html"> <img src="./2_files/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9KLzMvNjgyMzgzL29yaWdpbmFsL3NlY29uZC1nZW4tYXNpYy5QTkc=.png">     		<h1>Valve公布下一代定位方案：支持两个以上基座、秋季到来</h1>
+      	</a>
+      	<p>Valve将在今年秋天带来新的定位系统和基座，支持两个以上的定位基座，并且有更宽广的定位辐射角度，同时成本更低、零部件更少，但是很可能和目前的HTC Vive不兼容。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(6).php">          	<p>Axe斧娃</p>
+          	<span>| 10小时之前</span>
+          	<i class="fa fa-comments">0</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54764.html"> <img src="./2_files/jdi.jpg">     		<h1>iPhone 8转向OLED屏幕，日本JDI很受伤：本季要亏150亿日元</h1>
+      	</a>
+      	<p>随着iPhone 8手机转向OLED面板，苹果营收占40%的JDI有了更大压力了，现在撤回了之前的运营计划，8月份要推出新计划改组业务，预计本财季的亏损也将从之前预计的34亿日元增加到150亿日元。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(3).php">          	<p>bolvar</p>
+          	<span>| 10小时之前</span>
+          	<i class="fa fa-comments">9</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54763.html"> <img src="./2_files/PS4s_GS_01.jpg">     		<h1>你掉的是金色的PS4还是银色的PS4？金/银色限量版PS4 Slim发布</h1>
+      	</a>
+      	<p>港版的金色与银色PS4 Slim主机将在6月9日开始发售，只有500GB一种容量，售价为2080港元，折合约1813元人民币，还送《如龙6 命之诗》，目前还未入手PS4然而又手痒痒的不妨考虑下，国行暂时还没有消息。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(7).php">          	<p>Strike</p>
+          	<span>| 11小时之前</span>
+          	<i class="fa fa-comments">5</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54762.html"> <img src="./2_files/bit3.JPG">     		<h1>挖矿潮蔓延，京东的GTX 1060库存也告急</h1>
+      	</a>
+      	<p>挖矿市场火热，大部分AMD RX 580/570显卡在京东上卖断货，矿工也开始选择GTX 1060当锄头，并且有许多显卡直接涨价，预计在这段时间内消费者将很难买到2000元左右的显卡。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(2).php">          	<p>Origin</p>
+          	<span>| 11小时之前</span>
+          	<i class="fa fa-comments">40</i>
+       </div>
+      </div>
+    </li>
+          <li>
+    	<a href="http://m.expreview.com/54761.html"> <img src="./2_files/sapphire05.jpg">     		<h1>AMD、NVIDIA要推挖矿专用卡：90天质保，售价更便宜</h1>
+      	</a>
+      	<p>挖矿显卡也是个双刃剑，一方面帮厂商卖货了，但是也会导致游戏玩家买不到卡，售价高涨，而挖矿导致的显卡售后、二手卡也是个问题。有鉴于此，有消息称AMD、NVIDIA将推出挖矿专用卡，质保时间只有90天，但是显卡售价更便宜。</p>
+     	<div class="li_bottom">
+        <div class="un">
+        <img src="./2_files/avatar(3).php">          	<p>bolvar</p>
+          	<span>| 11小时之前</span>
+          	<i class="fa fa-comments">5</i>
+       </div>
+      </div>
+    </li>
+   </ul>
+  
+      	<a href="javascript:void(0)" id="index_main_ul_more" onclick="showMobileList(&#39;product&#39;,2,1720,1)" class="more">加载更多</a>
+    
+</div><div class="Footer">
+  <div class="F_nav">
+    <ul>
+      <li><a href="http://m.expreview.com/"><i class="fa fa-chevron-left"></i></a></li>
+      <li><a href="http://m.expreview.com/">首页</a></li>
+      <li><a href="http://m.expreview.com/news">新闻</a></li>
+      <li><a href="http://m.expreview.com/review">产品</a></li>
+      <li><a href="http://m.expreview.com/guide">淘攻略</a></li>
+      <li><a href="http://m.expreview.com/activity">活动</a></li>
+      <li><a href="http://m.expreview.com/#top"><i class="fa fa-arrow-circle-o-up" style="font-size:20px; margin:2px 2px 0 0;"></i></a></li>
+    </ul>
+  </div>
+  <div class="About">
+    <h1>超能网，生活科技第一站</h1>
+    <a href="http://www.expreview.com/7861.html" target="_self">关于我们</a>| <a href="http://www.expreview.com/36084.html" target="_self">联系我们</a>| <a>关注我们</a> <a href="http://weibo.com/expreview" target="_self">微博</a> <a href="http://weixin.qq.com/r/qnW8pGzEZrSjH9yC4" target="_self">微信</a> </div>
+  <div class="CopyRight">
+    <p>©2016 超能网 | 粤ICP备 12083257号</p>
+  </div>
+</div>
+     <img src="./2_files/wapstat.php" width="0" height="0">
+</body></html>
