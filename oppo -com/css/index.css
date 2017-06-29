@@ -103,10 +103,23 @@ a {
 
 
 .main-header .logo {
+	/* width:156px; */
+
 	margin: 34px 0 20px;
 	padding: 0;
 	text-align: left;
 	float: left;
+}
+.main-header .logo h1{
+	font-size: inherit;
+	display: inline-block;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+
+.main-header .logo img{
+	height: 19px;
 }
 
 .logo-extend {
@@ -195,7 +208,21 @@ li{
 
 
 }
+.main-header .user-menu{
+	display:none!important;
+	right: 10px;
+	top:58px;
+	width: 90px;
+	z-index: 21;
+	background: rgba(225, 225, 225,.9);
+	opacity: 0;
+	-webkit-transform:translate3d( 0,-0.5px,0);
+	-webkit-transition:all .3s .1s ease-in-out;
 
+
+
+}
+ 
 /* .slick-track{
 	position: relative;
 	top:0;
@@ -220,21 +247,26 @@ li{
 	min-height: 1px;
 
 }
+*/
 
 .hero-image .center{
 	height: 800px;
+	position: relative;
+	top:50%;
+	margin-top:-25%;
+	max-width: none;
 
 }
- */
+ 
 
-.hero-image {
-	 width:2605px; 
-	max-height: 800px;
+/* .hero-image {
+	
+	max-height: 568px;
 	position: relative;
 	overflow: hidden;
 	
 
-}
+} */
  
 .hero-image .center img{
 	margin:0;
@@ -246,15 +278,107 @@ li{
 
 }
 
-.hero-image img{
+/* .hero-image img{
 
 	width:auto;
 	height: 100%;
 	display: inline-block;
-}
+} */
 
 img{
 	
 	border:0;
 	vertical-align: middle;
+	max-width: 100%;
+}
+
+
+.slick-dot-circle .slick-dots{
+	text-align: center;
+	right: 0;
+	bottom:5px;
+}
+
+.full-carousel .slick-dots, .hero-tabs .slick-dots{
+	left:auto;
+	padding:0 20px;
+
+}
+.full-carousel .slick-dots, .hero-tabs .slick-dots{
+	position:absolute;
+	width: 100%;
+	
+}
+
+.full-carousel .slick-dots li, .hero-tabs .slick-dots li{
+	display: inline-block;
+	vertical-align: bottom;
+}
+.slick-dot-circle .slick-dots button{
+	width: 14px;
+	height: 14px;
+	border:2px solid #7b7b7b;
+	border-radius: 50%;
+	background-color:#7b7b7b;
+	outline:none;
+
+}
+
+
+.slick-dot-circle .slick-dots .slick-active button, 
+.slick-dot-circle .slick-dots button:hover{
+	height: 14px;
+	background-color:#ffffff;
+	border:2px solid #2aad6f; 
+}
+
+.brick-feature{
+	padding-top:5px;
+
+}
+
+.brick-feature .g-wrapper-s{
+	margin-left:-5px;
+
+}
+.g{
+	letter-spacing: -0.35px;
+
+}
+
+.brick-feature .g-wrapper-s .gi{
+	margin-left:5px;
+
+}
+
+.lap-one-third{
+		width:33.333%;
+		float:left;
+
+}
+.gi{
+	letter-spacing:normal;
+	display: inline-block;
+	vertical-align: top;
+
+}
+.brick-feature .feature-product{
+	margin:0;
+}
+
+.feature-product{
+	position: relative;
+}
+.brick-feature img{
+	width: 100%;
+
+
+
+}
+
+img{
+	border: 0;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
 }
