@@ -95,6 +95,8 @@ a {
 
 .main-header .bottom-area {
 	background: #fff;
+	display: block;
+	
 }
 
 .main-header .boottom-area .wrapper {
@@ -102,8 +104,22 @@ a {
 }
 
 
+/*清楚浮动： .main-header .bottom-area .wrapper:after{
+	clear:both;
+	content:"";
+	display: table;
+}
+ */
+ .main-header .bottom-area .wrapper:after{
+ 	clear:both;
+ 	content:".";
+ 	display: block;
+ 	height: 0;
+ 	visibility: hidden;
+ }
+
 .main-header .logo {
-	/* width:156px; */
+	
 
 	margin: 34px 0 20px;
 	padding: 0;
@@ -125,6 +141,7 @@ h1,h2,h3,h4,h5,h6{
 .logo-extend {
 	width: 400px !important;
 	position: relative;
+	margin:0;
 }
 
 .main-header .main-menu{
@@ -252,7 +269,7 @@ li{
 .hero-image .center{
 	height: 800px;
 	position: relative;
-	top:50%;
+	 top:50%;
 	margin-top:-25%;
 	max-width: none;
 
@@ -271,7 +288,7 @@ li{
 .hero-image .center img{
 	margin:0;
 	position: relative;
-	top:50%;
+	 top:50%; 
 	left:50%;
 	transform:translate(-50%,-50%);
 	max-width: none;
@@ -342,7 +359,7 @@ img{
 
 }
 .g{
-	letter-spacing: -0.35px;
+	letter-spacing: -0.35em;
 
 }
 
@@ -352,8 +369,8 @@ img{
 }
 
 .lap-one-third{
-		width:33.333%;
-		float:left;
+		width:32.333%;
+	
 
 }
 .gi{
@@ -381,4 +398,141 @@ img{
 	vertical-align: middle;
 	max-width: 100%;
 	height: auto;
+}
+
+/* 调试
+.main-content .brick-feature .g-wrapper-s:after{
+
+	clear:both;
+	content:"";
+	display:table;
+
+	clear:both;
+ 	content:".";
+ 	display: block;
+ 	height: 0;
+ 	visibility: hidden;
+}
+*/
+
+
+/* main结束 */
+
+.main-footer{
+	padding:46px 0;
+	background: #f6f6f6;
+	display: block;
+} 
+.footer-sitemap{
+	padding-bottom:30px;
+	padding:24px 0;
+}
+.lap-three-quarters{
+	width:75%;
+
+}
+
+.footer-sitemap li{
+	border:none;
+	position: relative;
+
+}
+
+.lap-one-quarter{
+	width: 25%;
+}
+.footer-sitemap .m-item{
+	display: inline-block;
+	padding:0;
+	margin-bottom: 10px;
+
+
+}
+
+.footer-sitemap .m-item{
+	color:#363636;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	padding:20px 0;
+	font-weight: bold;
+}
+
+.footer-sitemap li li a{
+	margin:10px 0;
+	display:block;
+	font-size: 13px;
+	font-size:0.8125rem;
+	color:#363636;
+}
+
+.align-right{
+	text-align: right;
+
+
+}
+.lap-one-whole{
+	width: 100%;
+
+
+}
+
+.one-half{
+	display: inline-block;
+	letter-spacing: normal;
+	word-spacing: normal;
+	vertical-align: top;
+
+}
+
+.footer-sitemap .contact-number{
+		font-size:30px;
+		font-size:1.875rem;
+		padding-top:20px;
+
+}
+
+p{
+	margin:0;
+}
+
+
+.footer-info{
+	text-align: left;
+	color:#7b7b7b;
+	font-size:13px;
+	font-size:0.8125rem;
+	padding:24px 0;
+	position: relative;
+}
+
+.footer-focus{
+	float:right;
+}
+
+.footer-focus .text{
+	float:left;
+	line-height: 30px;
+	font-size:0.8125rem;
+}
+
+/* 顶部按钮 */
+.navi-scroll{
+	position: fixed;
+	right: 32px;
+	bottom:32px;
+	width: 42px;
+	min-height: 36px;
+	z-index:999;
+}
+
+.navi-scroll .navi-scroll-content{
+	position: relative;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+
+.navi-scroll .navi-scroll-content .scroll-top-btn{
+	margin-bottom: 2px;
 }
