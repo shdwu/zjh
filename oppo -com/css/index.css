@@ -4,7 +4,7 @@
 
 html {
 	font-size: 100%;
-	overflow: hidden;
+	/* overflow: hidden; */
 	font-family: sans-serif;
 	-webkit-tap-highlight-color: transparent;
 }
@@ -102,6 +102,12 @@ a {
 .main-header .boottom-area .wrapper {
 	overflow: visible;
 }
+.your-class, .your-class img{
+			width:100%;
+			height: 700px;
+			margin:0 auto;
+ 
+		}
 
 
 /*清楚浮动： .main-header .bottom-area .wrapper:after{
@@ -316,7 +322,12 @@ img{
 	bottom:5px;
 }
 
-.full-carousel .slick-dots, .hero-tabs .slick-dots{
+/* .hero-image img{
+	width: auto;
+	height: 100%;
+} */
+
+/* .full-carousel .slick-dots, .hero-tabs .slick-dots{
 	left:auto;
 	padding:0 20px;
 
@@ -339,16 +350,16 @@ img{
 	background-color:#7b7b7b;
 	outline:none;
 
-}
+} */
 
 
-.slick-dot-circle .slick-dots .slick-active button, 
+/* .slick-dot-circle .slick-dots .slick-active button, 
 .slick-dot-circle .slick-dots button:hover{
 	height: 14px;
 	background-color:#ffffff;
 	border:2px solid #2aad6f; 
 }
-
+ */
 .brick-feature{
 	padding-top:5px;
 
@@ -398,6 +409,7 @@ img{
 	vertical-align: middle;
 	max-width: 100%;
 	height: auto;
+
 }
 
 /* 调试
@@ -516,7 +528,7 @@ p{
 }
 
 /* 顶部按钮 */
-.navi-scroll{
+/* .navi-scroll{
 	position: fixed;
 	right: 32px;
 	bottom:32px;
@@ -535,4 +547,70 @@ p{
 
 .navi-scroll .navi-scroll-content .scroll-top-btn{
 	margin-bottom: 2px;
+}
+
+
+.navi-scroll .navi-scroll-content a{
+	width:42px;
+	height: 36px;
+	display: block;
+	overflow:hidden;
+	position: relative;
+	background-color:#ededed; 
+}
+
+
+
+.navi-scroll .navi-scroll-content a span{
+	width:78px;
+	height: 36px;
+	color:#fff;
+	line-height: 36px;
+	font-size:14px;
+	text-align: center;
+	 display: none; 
+
+}
+
+.navi-scroll .navi-scroll-content .scroll-top-btn i{
+	width: 20px;
+	height: 20px;
+	margin-top:-10px;
+	right: 11px;
+	background-image:url(../iamge/icon.png);  
+}
+
+
+.navi-scroll .navi-scroll-content a i{
+	position: absolute;
+	top:50%;
+	background-repeat:no-repeat;
+	background-position:center center;  
+}
+
+i{
+	font-style: italic;
+} */
+
+#navi-scroll-content{position:fixed;display:none; right: 10px; bottom:20px;
+ width:50px;height:48px;background:#fff url(../iamge/icon.png) no-repeat 16px 15px;border:solid 1px #f9f9f8;border-radius:6px;box-shadow:0 1px 1px rgba(0, 0, 0, 0.2);cursor:pointer}
+#navi-scroll-content:hover{height:50px;background-position:16px 16px;box-shadow:0 1px 1px rgba(0, 0, 0, 0.3)}
+
+#dingbu{
+	width: 78px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	background:#009B72;
+	color:#fff; 
+	font-size:14px;
+	 right:60px;
+	bottom:22px;
+	float:right;
+	position:fixed;
+	display: none;
+	
+
+
+
 }

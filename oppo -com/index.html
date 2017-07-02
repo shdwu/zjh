@@ -2,6 +2,10 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> 响应式 -->
+
+	<link href="http://cdn.bootcss.com/slick-carousel/1.6.0/slick.min.css" rel="stylesheet">
+	<link href="http://cdn.bootcss.com/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet">
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE">
 	<meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
@@ -9,6 +13,8 @@
 	<meta name="keywords" content="OPPO手机,OPPO智能手机大全,OPPO智能手机最新报价,OPPO智能手机图片,OPPO智能手机机型 ">
 	<meta name="description" content="OPPO是更多年轻人选择的拍照手机品牌。十年来,OPPO专注于手机拍照领域的技术创新,开创了手机自拍美颜时代,先后首发了前置500万像素和1600万像素的拍照手机,创造性地推出了全球首个电动旋转摄像头和超清画质等拍照技术,为全球20多个国家和地区的年轻人提供了出色的手机拍照体验。 ">
 	<link rel="stylesheet" href="./css/index.css">
+
+
 </head>
 <body>
 	<header class="main-header absolute">
@@ -111,23 +117,30 @@
 		</div>
 	</header>
 
-	<main class="main-content">
+	<main class="main-content"  style="margin:0 auto; width:100%;  position:relative;">
 		<section class="full-carousel slick-dot-circle slick-initialized slick-slider">
 			 <!-- div class="slick-list draggable">
 			 				<div class="slick-track" >
 			 					<div class="hero slick-slide slick-cloned">  -->
-						<div class="hero-image center">
+						<div class="hero-image center" >
 							<a href="http://www.opposhop.cn/products/397.html" target="_blank">
-								<picture>
-									<img src="./iamge/.jpg" alt="">
-								</picture>
+								
+									<div class="your-class">
+											<div><img src="./iamge/e3.jpg"></div>
+											<div><img src="./iamge/b1.jpg"></div>
+											<div><img src="./iamge/3d.jpg"></div>
+											<div><img src="./iamge/a1.jpg"></div>
+									</div>
+									
+								
+								
 							</a>
 						</div>
 					<!-- </div>
 					</div>
 				</div>  -->
 
-				<ul class="slick-dots" style="display: block;">
+				<!-- <ul class="slick-dots" style="display: block;">
 					<li class>
 						<button type="button" data-role="none"></button>
 					</li>
@@ -140,7 +153,7 @@
 					<li class>
 					    <button type="button" data-role="none"></button>
 					</li>
-				</ul>
+				</ul> -->
 		</section>
 		<section class="brick-feature">
 			<div class="g g-wrapper-s">
@@ -281,19 +294,106 @@
 		</div>
 	</footer>
 
-	<div class="navi-scroll" styke="display:block;">
-		<div class="navi-scroll-content">
-			<a href="javascript:;" class="scroll-top-btn">
+	
+	<div id="dingbu" class="dingbu">回到顶部</div> 
+	<div class="navi-scroll-content" id="navi-scroll-content">
+		
+		
+	</div>
+
+
+	<!-- div class="navi-scroll" style="display:block;">
+		<div class="navi-scroll-content" id="navi-scroll-content">
+			<a href="javascript:;" class="scroll-top-btn" id="scroll-top-btn">
 				<span>回到顶部</span>
 				<i></i>
 			</a>
 		</div>
-	</div>
+	</div> -->
+
 
 	<script src="http://shopfs.myoppo.com/cn/lib/lib.min.js"></script>
 	<script src="http://shopfs.myoppo.com/cn/lib/custom_form.js?v=20150914144728"></script>
 	<script src="http://shopfs.myoppo.com/cn/lib/scripts.js?v=201506151120596"></script>
 	<script src="http://shopfs.myoppo.com/cn/assets/javascripts/oppo.min.js?v=20170629181030"></script>
+	
+	<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+	<script src="http://cdn.bootcss.com/slick-carousel/1.3.11/slick.js"></script> 
+
+
+		
+
+	<script type="text/javascript">
+		 $(function(){
+			$('.your-class').slick({
+				dots:true,
+				infinite:true,
+				slidesToShow:1,
+				speed:300,
+				adaptiveHight:true
+
+			});
+		});
+
+
+
+
+	</script>
+
+	
+
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			var sc=$(window).scrollTop();
+			var rwidth=$(window).width()+$(document).scrollLeft();
+			var rheight=$(window).width()+$(document).scrollTop();
+
+			if(sc>0){
+				$('#navi-scroll-content').css("display","block");
+				$('#navi-scroll-content').css("left"+(rwidth-80)+"px");
+				$('#navi-scroll-content').css("top"+(rheight-120)+"px");
+
+			}
+				else{
+			$("#navi-scroll-content").css("display","none");
+			}
+
+
+		});
+
+		$("#navi-scroll-content").click(function(){
+		$('body,html').animate({scrollTop:0},500);
+	});
+	</script>
+
+	<script type="text/javascript">
+		$(function(){
+
+			
+			$("#navi-scroll-content").mouseover(function(){
+				$("#dingbu").css("display","block");
+				
+
+	
+			});
+			$("#navi-scroll-content").mouseout(function(){
+				$("#dingbu").css("display","none");
+			});
+
+		});
+	</script>
+
+
+	<script type="text/javascript">
+		$(function(){
+			var a=document.getElementByName('')
+
+		});
+		
+	</script>
+	
+
+	
 	
 </body>
 </html>
