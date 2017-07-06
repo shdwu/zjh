@@ -127,8 +127,8 @@
 								
 									<div class="your-class">
 											<div><img src="./iamge/e3.jpg"></div>
-											<div><img src="./iamge/b1.jpg"></div>
-											<div><img src="./iamge/3d.jpg"></div>
+											<div><img src="./iamge/bf.jpg"></div>
+											<div><img src="./iamge/87.jpg"></div>
 											<div><img src="./iamge/a1.jpg"></div>
 									</div>
 									
@@ -294,22 +294,22 @@
 		</div>
 	</footer>
 
-	
+	<!-- 
 	<div id="dingbu" class="dingbu">回到顶部</div> 
 	<div class="navi-scroll-content" id="navi-scroll-content">
 		
 		
 	</div>
+	 -->
 
-
-	<!-- div class="navi-scroll" style="display:block;">
+	<div class="navi-scroll" style="display:block;">
 		<div class="navi-scroll-content" id="navi-scroll-content">
 			<a href="javascript:;" class="scroll-top-btn" id="scroll-top-btn">
 				<span>回到顶部</span>
 				<i></i>
 			</a>
 		</div>
-	</div> -->
+	</div>
 
 
 	<script src="http://shopfs.myoppo.com/cn/lib/lib.min.js"></script>
@@ -346,12 +346,12 @@
 		$(window).scroll(function(){
 			var sc=$(window).scrollTop();
 			var rwidth=$(window).width()+$(document).scrollLeft();
-			var rheight=$(window).width()+$(document).scrollTop();
+			var rheight=$(window).height()+$(document).scrollTop();
 
 			if(sc>0){
 				$('#navi-scroll-content').css("display","block");
-				$('#navi-scroll-content').css("left"+(rwidth-80)+"px");
-				$('#navi-scroll-content').css("top"+(rheight-120)+"px");
+				// $('#navi-scroll-content').css("left",(rwidth-80)+"px");
+				// $('#navi-scroll-content').css("top",(rheight-120)+"px");
 
 			}
 				else{
@@ -383,7 +383,7 @@
 		});
 	</script>
 
-
+<!-- 
 	<script type="text/javascript">
 		$(function(){
 			var a=document.getElementByName('')
@@ -391,7 +391,7 @@
 		});
 		
 	</script>
-	
+	 -->
 
 	
 	

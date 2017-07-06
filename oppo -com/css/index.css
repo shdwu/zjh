@@ -103,9 +103,10 @@ a {
 	overflow: visible;
 }
 .your-class, .your-class img{
-			width:100%;
-			height: 700px;
-			margin:0 auto;
+			width:1818px;
+			height:568px;
+			 margin:0 auto; 
+
  
 		}
 
@@ -528,7 +529,7 @@ p{
 }
 
 /* 顶部按钮 */
-/* .navi-scroll{
+ .navi-scroll{
 	position: fixed;
 	right: 32px;
 	bottom:32px;
@@ -568,8 +569,14 @@ p{
 	line-height: 36px;
 	font-size:14px;
 	text-align: center;
-	 display: none; 
+	display:none;
 
+
+
+
+}
+.navi-scroll .navi-scroll-content a:hover span{
+	display: block;
 }
 
 .navi-scroll .navi-scroll-content .scroll-top-btn i{
@@ -577,7 +584,14 @@ p{
 	height: 20px;
 	margin-top:-10px;
 	right: 11px;
-	background-image:url(../iamge/icon.png);  
+	background-image:url(../iamge/icon.png); 
+
+
+}
+
+.navi-scroll .navi-scroll-content .scroll-top-btn:hover  i{
+	background-image:url(../iamge/backtop-icon-active.png); 
+
 }
 
 
@@ -590,8 +604,17 @@ p{
 
 i{
 	font-style: italic;
-} */
+} 
+.navi-scroll .navi-scroll-content a:hover {
 
+    width: 120px;
+    margin-left: -78px;
+    background-color: #47b488;
+}
+
+
+
+/* 
 #navi-scroll-content{position:fixed;display:none; right: 10px; bottom:20px;
  width:50px;height:48px;background:#fff url(../iamge/icon.png) no-repeat 16px 15px;border:solid 1px #f9f9f8;border-radius:6px;box-shadow:0 1px 1px rgba(0, 0, 0, 0.2);cursor:pointer}
 #navi-scroll-content:hover{height:50px;background-position:16px 16px;box-shadow:0 1px 1px rgba(0, 0, 0, 0.3)}
@@ -608,8 +631,8 @@ i{
 	bottom:22px;
 	float:right;
 	position:fixed;
-	display: none;
-	
+	display:none;
+	 */
 
 
 
