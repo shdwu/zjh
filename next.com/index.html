@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>产品网页</title>
+	<link rel="stylesheet" href="./css/index.css"/>
+	 <link href="http://cdn.bootcss.com/fullPage.js/2.9.4/jquery.fullpage.css" rel="stylesheet"> 
+	<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> 
+	 <script src="http://cdn.bootcss.com/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+	<script src="http://cdn.bootcss.com/move.js/0.5.0/move.min.js"></script> 
+</head>
+<body>
+<div class="overall" id="overall">
+	<div class="warpper">
+		<header>
+
+			<div class="con">
+				<div class="header-n">
+					<img class="logo" src="./images/logo.png" alt="">
+					
+						<div class="search-t">search
+							
+							<div class="go">GO</div>
+
+						</div>
+
+						
+				</div>
+
+				<div class="line">
+							
+				</div>		
+					
+			</div>
+
+
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">活动详情</a></li>
+					<li><a href="#">OPPO官网</a></li>
+					<li><a href="#">产品介绍</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+			</nav>
+		</header>
+
+
+		 <div class="banner">
+			<img src="./images/banner.png" >
+		
+		</div> 
+		
+		
+		
+		<div class="theme">
+			<div class="theme-n">
+				<ul>
+					<li><a href="#">R11</a></li>
+					<li><a href="#">R9</a></li>
+					<li><a href="#">A59</a></li>
+					<li><a href="#">A57</a></li>
+					<li><a href="#">A37</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		
+	</div>
+</div>
+
+
+ <script type="text/javascript">
+	$(function(){
+		$("#ido").fullpage({
+			verticalCentered:false,
+			achors:['page1','page2','page3','page4'],
+			navigation:true;
+			navigationTooltips:['它，来了。真正与你贴近的人']
+			afterLoad:function(link,index){
+				switch(index){
+					case1:
+						move('.section1 h1').scale(1.5).end();
+						move('.section1 p').set('margin-top',"1500p").end();
+
+					break;
+					csae2:
+					break;
+					case3:
+					break;
+					default:
+					break
+				},
+			},
+
+
+
+			onLeave:function(link,index){
+				switch(index){
+					case1:
+						
+					break;
+					csae2:
+					break;
+					case3:
+					break;
+					default:
+					break
+				}
+			}
+
+
+
+			afterRender:function(link,index){
+				
+			}
+
+
+		});
+	});
+	
+		
+</script> 
+</body>
+</html>
