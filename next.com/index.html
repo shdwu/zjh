@@ -4,12 +4,15 @@
 	<meta charset="UTF-8">
 	<title>产品网页</title>
 	<link rel="stylesheet" href="./css/index.css"/>
+
+
 	 <link href="http://cdn.bootcss.com/fullPage.js/2.9.4/jquery.fullpage.css" rel="stylesheet"> 
 	<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> 
 	 <script src="http://cdn.bootcss.com/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
 	<script src="http://cdn.bootcss.com/move.js/0.5.0/move.min.js"></script> 
 </head>
 <body>
+
 <div class="overall" id="overall">
 	<div class="warpper">
 		<header>
@@ -18,19 +21,20 @@
 				<div class="header-n">
 					<img class="logo" src="./images/logo.png" alt="">
 					
-						<div class="search-t">search
-							
-							<div class="go">GO</div>
+					<div class="search-t">
+						<input type="text" value="search">
 
-						</div>
+						<div class="go">GO</div>
 
-						
+					</div>
+
+
 				</div>
 
 				<div class="line">
-							
+
 				</div>		
-					
+
 			</div>
 
 
@@ -46,81 +50,117 @@
 		</header>
 
 
-		 <div class="banner">
+		<div class="banner">
 			<img src="./images/banner.png" >
-		
+
 		</div> 
 		
 		
 		
-		<div class="theme">
-			<div class="theme-n">
-				<ul>
-					<li><a href="#">R11</a></li>
-					<li><a href="#">R9</a></li>
-					<li><a href="#">A59</a></li>
-					<li><a href="#">A57</a></li>
-					<li><a href="#">A37</a></li>
-				</ul>
+		
+		<div class="theme-n">
+
+			<ul>
+				<li><a href="#scroll.html">R11</a></li>
+				<li><a href="#">R9</a></li>
+				<li><a href="#">A59</a></li>
+				<li><a href="#">A57</a></li>
+				<li><a href="#">A37</a></li>
+			</ul>
+			<div class="inline"></div>
+		</div>
+		
+		<div class="main">
+			<div class="imgs">
+				<img src="./images/09.png" alt="">
+			</div>
+			<div class="text">
+				<div class="txt">
+				<h3>发布背景</h3>
+				<p>2017年5月16日，OPPO发出OPPOR11的预热海报，分别在北京、成都、广州、济南、南京、上海、沈阳、西安以及重庆9大城市的地标中公布了	OPPO R11的预热宣传“前后2000万，拍照更清晰”。</p>
+				</div>
+				<div class="txt">
+				<h3>外观特点</h3>
+				<p>OPPO R11从预热海报中可以看到将采用“前后2000万”摄像头，主题为“前后2000万，拍照更清晰”。OPPO R11延续了R系列的外观设计，采用双摄设计，微缝天线2.0，改为双C形设计，机身边缘过渡流畅，整机线条也比上代更显纤薄。</p>
+				</div>
+
+				<div class="txt">
+				<h3>主要功能</h3>
+				<p>OPPO R11的前后置摄像头都达到2000万像素，将会配备1600万像素广角+2000万像素长焦双摄像头，并提供了人像模式。OPPO R11支持VOOC闪充功能，充电5分钟通话2小时。</p>
+				</div>
+				<div class="txt">
+				<h3>规格参数</h3>
+				<p>PPO R11，是oppo旗下一款智能手机。拥有2000万+1600万像素的后置镜头和2000万像素的前置镜头，其内置骁龙处理器、4GBRAM+64GBROM，预装Android7.1系统</p>
+				</div>
+				
+				
+
+
 			</div>
 		</div>
+		
+		<div class="ended">
+			
+			<div class="end-h">
+				<ul>
+					<li class="t-1">
+						<div class="line-2"></div>
+						<a href="">Find系列</a>
+						<div class="line-1"></div>
 
+					</li>
+					<li class="t-2">
+						<div class="line-2"></div>
+						<a href="">N系列</a>
+						<div class="line-1"></div>
+					</li>
+					<li class="t-3">
+						<div class="line-2"></div>
+						<a href="">R系列</a>
+						<div class="line-1"></div>
+					</li>
+					<li class="t-4"> 
+						<div class="line-2"></div>
+						<a href="">A系列</a>
+						<div class="line-1"></div>
+					</li>
+				</ul>
+			</div>  
 
+			<div class="img-1">
+				<img src="./images/a4.jpg" alt="">
+				<img src="./images/8d.jpg" alt="">
+				<img src="./images/8c.jpg" alt="">
+				<img src="./images/a5.jpg" alt="">
+			</div>
+						
+						
+		</div>
+		
 		
 	</div>
-</div>
 
-
- <script type="text/javascript">
-	$(function(){
-		$("#ido").fullpage({
-			verticalCentered:false,
-			achors:['page1','page2','page3','page4'],
-			navigation:true;
-			navigationTooltips:['它，来了。真正与你贴近的人']
-			afterLoad:function(link,index){
-				switch(index){
-					case1:
-						move('.section1 h1').scale(1.5).end();
-						move('.section1 p').set('margin-top',"1500p").end();
-
-					break;
-					csae2:
-					break;
-					case3:
-					break;
-					default:
-					break
-				},
-			},
-
-
-
-			onLeave:function(link,index){
-				switch(index){
-					case1:
-						
-					break;
-					csae2:
-					break;
-					case3:
-					break;
-					default:
-					break
-				}
-			}
-
-
-
-			afterRender:function(link,index){
-				
-			}
-
-
-		});
-	});
 	
+</div>
+<!-- <iframe name="content_frame" marginwidth=0 marginheight=0 width=100%  height=700px src="./scroll.html" frameborder=0></iframe> 
+ -->
+
+<script type="text/javascript">
+$(function(){
+
+
+	$(".search-t > input").click(function(){
+		$(this).val("");
+
 		
-</script> 
+	
+
+	});
+
+});
+
+
+	
+</script>
 </body>
 </html>
